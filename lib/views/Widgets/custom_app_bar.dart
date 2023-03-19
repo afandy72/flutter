@@ -7,11 +7,36 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
+        const Text(
           'Notes',
-          style: TextStyle(),
-        )
+          style: TextStyle(
+            fontSize: 28,
+          ),
+        ),
+        Spacer(),
+        CustomeSearchIcon(),
       ],
+    );
+  }
+}
+
+class CustomeSearchIcon extends StatelessWidget {
+  const CustomeSearchIcon({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 45,
+      width: 45,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Center(
+        child: Icon(
+          Icons.search,
+        ),
+      ),
     );
   }
 }
