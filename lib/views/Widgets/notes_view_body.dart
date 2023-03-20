@@ -29,20 +29,26 @@ class NoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Color.fromARGB(255, 115, 105, 0),
+        color: Color.fromARGB(255, 237, 219, 26),
         borderRadius: BorderRadius.circular(16),
       ),
-      child: Column(children: [
+      child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
         ListTile(
           title: Text(
             'Flutter Tips',
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: Colors.black, fontSize: 26),
           ),
-          subtitle:
-              Text('build your career', style: TextStyle(color: Colors.black)),
+          subtitle: Text('build your career',
+              style: TextStyle(color: Colors.black, fontSize: 20)),
           trailing: IconButton(
             onPressed: () {},
             icon: Icon(Icons.delete, color: Colors.black),
+          ),
+        ),
+        Text(
+          'May21 ,2023',
+          style: TextStyle(
+            color: Colors.black,
           ),
         )
       ]),
