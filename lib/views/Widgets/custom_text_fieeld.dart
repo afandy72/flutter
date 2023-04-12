@@ -10,6 +10,7 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
+        hintText: "add new note",
       ),
     );
   }
