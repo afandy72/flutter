@@ -23,7 +23,17 @@ class AddNoteBottomSheet extends StatelessWidget {
             hinttext: "Note",
             maxlines: 9,
           ),
-          TextButton(onPressed: () {}, child: Text("Add"))
+          TextButton(
+              onPressed: () {},
+              child: Container(
+                width: 74,
+                height: 22,
+                decoration: BoxDecoration(color: Colors.blue),
+                child: Text(
+                  " Add",
+                  style: TextStyle(color: Colors.black),
+                ),
+              ))
         ],
       ),
     );
