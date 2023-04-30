@@ -22,7 +22,8 @@ class AddNoteBottomSheet extends StatelessWidget {
           CustomTextField(
             hinttext: "Note",
             maxlines: 9,
-          )
+          ),
+          TextButton(onPressed: () {}, child: Text("Add"))
         ],
       ),
     );
