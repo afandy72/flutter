@@ -32,8 +32,7 @@ class AddNoteBottomSheet extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 height: 50,
                 decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(16)),
+                    color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                 child: Center(
                   child: Text(
                     " Add",
