@@ -16,7 +16,7 @@ class EditNoteViewBody extends StatelessWidget {
           child: Column(
             children: [
               CustomAppBar(
-                eee: "Edit",
+                eee: "Edit Note",
                 icon: Icons.check,
               ),
             ],
