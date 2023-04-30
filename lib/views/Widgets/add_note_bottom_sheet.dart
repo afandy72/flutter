@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/views/Widgets/custom_text_fieeld.dart';
 
+import 'Custombutton.dart';
+
 class AddNoteBottomSheet extends StatelessWidget {
   const AddNoteBottomSheet({super.key});
 
@@ -60,23 +62,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           SizedBox(
             height: 30,
           ),
-          TextButton(
-              onPressed: () {},
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: 50,
-                decoration: BoxDecoration(
-                    color: Colors.blue, borderRadius: BorderRadius.circular(8)),
-                child: Center(
-                  child: Text(
-                    " Add",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ))
+          CustomButton(),
         ],
       ),
     );
