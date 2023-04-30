@@ -11,45 +11,62 @@ class AddNoteBottomSheet extends StatelessWidget {
       child: Container(
         height: 430,
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 32,
-              ),
-              CustomTextField(
-                hinttext: "Title",
-              ),
-              SizedBox(
-                height: 32,
-              ),
-              CustomTextField(
-                hinttext: "Note",
-                maxlines: 9,
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              TextButton(
-                  onPressed: () {},
-                  child: Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 50,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(8)),
-                    child: Center(
-                      child: Text(
-                        " Add",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                  ))
-            ],
-          ),
+          child: AddNoteForm(),
         ),
+      ),
+    );
+  }
+}
+
+class AddNoteForm extends StatefulWidget {
+  const AddNoteForm({
+    super.key,
+  });
+
+  @override
+  State<AddNoteForm> createState() => _AddNoteFormState();
+}
+
+class _AddNoteFormState extends State<AddNoteForm> {
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      child: Column(
+        children: [
+          SizedBox(
+            height: 32,
+          ),
+          CustomTextField(
+            hinttext: "Title",
+          ),
+          SizedBox(
+            height: 32,
+          ),
+          CustomTextField(
+            hinttext: "Note",
+            maxlines: 9,
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          TextButton(
+              onPressed: () {},
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                child: Center(
+                  child: Text(
+                    " Add",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ))
+        ],
       ),
     );
   }
