@@ -17,7 +17,10 @@ class NotesViewBody extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(bottom: 16),
-            child: CustomAppBar(),
+            child: CustomAppBar(
+              eee: "Notes",
+              www: Icons.search,
+            ),
           ),
           Expanded(child: NotesListView()),
         ],
