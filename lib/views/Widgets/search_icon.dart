@@ -9,13 +9,13 @@ class CustomeSearchIcon extends StatelessWidget {
         height: 45,
         width: 45,
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.03),
+          color: Colors.white.withOpacity(0.3),
           borderRadius: BorderRadius.circular(16),
         ),
         child: IconButton(
           icon: Icon(
             icon,
-            size: 24,
+            size: 28,
           ),
           onPressed: () {},
         ));
