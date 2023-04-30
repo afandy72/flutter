@@ -28,9 +28,11 @@ class AddNoteForm extends StatefulWidget {
 }
 
 class _AddNoteFormState extends State<AddNoteForm> {
+  final GlobalKey<FormState> formkey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Form(
+      key: formkey,
       child: Column(
         children: [
           SizedBox(
