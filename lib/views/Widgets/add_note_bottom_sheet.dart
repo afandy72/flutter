@@ -24,17 +24,21 @@ class AddNoteBottomSheet extends StatelessWidget {
             maxlines: 9,
           ),
           SizedBox(
-            height: 32,
+            height: 30,
           ),
           TextButton(
               onPressed: () {},
               child: Container(
-                width: 100,
-                height: 30,
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Text(
-                  " Add",
-                  style: TextStyle(color: Colors.white, fontSize: 24),
+                width: MediaQuery.of(context).size.width,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(16)),
+                child: Center(
+                  child: Text(
+                    " Add",
+                    style: TextStyle(color: Colors.white, fontSize: 24),
+                  ),
                 ),
               ))
         ],
