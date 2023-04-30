@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'search_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.eee, required this.www});
+  const CustomAppBar({super.key, required this.eee, required this.icon});
   final String eee;
-  final IconData www;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -22,7 +22,10 @@ class CustomAppBar extends StatelessWidget {
             color: Colors.white.withOpacity(0.2),
             borderRadius: BorderRadius.circular(16),
           ),
-          child: const Center(child: CustomeSearchIcon()),
+          child: Center(
+              child: CustomeSearchIcon(
+            icon: icon,
+          )),
         ),
       ],
     );
