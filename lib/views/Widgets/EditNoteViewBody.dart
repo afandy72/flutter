@@ -15,7 +15,10 @@ class EditNoteViewBody extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              CustomAppBar(),
+              CustomAppBar(
+                eee: "Edit",
+                www: Icons.delete,
+              ),
             ],
           ),
         ),
