@@ -26,12 +26,12 @@ class AddNoteBottomSheet extends StatelessWidget {
           TextButton(
               onPressed: () {},
               child: Container(
-                width: 74,
-                height: 22,
+                width: 100,
+                height: 30,
                 decoration: BoxDecoration(color: Colors.blue),
                 child: Text(
                   " Add",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.white, fontSize: 24),
                 ),
               ))
         ],
